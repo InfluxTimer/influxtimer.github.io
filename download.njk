@@ -1,0 +1,59 @@
+---
+title: "Influx Timer - Download"
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		{% include "head.njk" %}
+	</head>
+	<body>
+		{% include "top.njk" %}
+		<div class="container">
+			<div class="inf-cont">
+				<p class="mx-auto text-center display-4">Latest Build</p>
+				<p class="text-center">2022-05-28</p>
+				<table class="table table-sm table-striped mx-auto" style="max-width:99%">
+					<thead class="inf-bg-myclr">
+						<tr>
+							<th class="text-center">#</th>
+							<th>Commit Message</th>
+							<th class="text-center">Package Download</th>
+						</tr>
+					</thead>
+					<tbody>
+						{% for download in downloads %}
+							<tr>
+								<th class="text-center">{{ download.build_num }}</th>
+								<td>
+									<a target="_blank" href="https://github.com/InfluxTimer/sm-timer/commit/{{ download.commit_hash }}">{{ download.commit_message }}</a>
+								</td>
+								<td class="text-center inf-wordspace-3">
+									<a href="{{ download.downloads.bhop }}">Bhop</a> | <a href="{{ download.downloads.surf }}">Surf</a> | <a href="{{ download.downloads.bhoplite }}">BhopLite</a> | <a href="{{ download.downloads.deathrun }}">Deathrun</a> | <a href="{{ download.downloads.full }}">Full</a>
+								</td>
+							</tr>
+						{% endfor %}
+					</tbody>
+				</table>
+				<div class="mx-auto text-center mt-4">
+					<p>Place the zip contents in your game directory (cstrike/csgo). Follow the <a href="/guide/">guide page</a> for further guidance.</p>
+					<p class="font-weight-light text-muted">Lite is a special version targeted for LAN servers. Features such as chat-tags and ranks are removed from this build.</p>
+					<p class="font-weight-light text-muted">Full package contains all plugins and features contained within Influx. It isn't configured for any particular gamemode.</p>
+				</div>
+			</div>
+			<div class="inf-cont">
+				<h3 class="mx-auto text-center font-weight-light">Other plugins you might like</h3>
+				<div style="display:flex; justify-content: center; align-items: center;">
+					<div style="display: inline-block;">
+						<a target="_blank" href="https://forums.alliedmods.net/showthread.php?t=310825">RNGFix (Slope boost &amp; bhop booster fix)</a><br>
+						<a target="_blank" href="https://forums.alliedmods.net/showthread.php?p=2069582">Auto nav file generator</a><br>
+						<a target="_blank" href="https://forums.alliedmods.net/showthread.php?p=808724">MP Bhop blocks (func_door bhop blocks)</a><br>
+						<a target="_blank" href="https://forums.alliedmods.net/showthread.php?t=166468">Modify weapon speeds (260vel weapons)</a><br>
+						<a target="_blank" href="https://forums.alliedmods.net/showthread.php?t=255298">CS:GO Movement Unlocker (prestrafing)</a><br>
+						<a target="_blank" href="https://github.com/Franc1sco/FixHintColorMessages">CS:GO HUD fix</a><br>
+						<a target="_blank" href="https://forums.alliedmods.net/showthread.php?t=320971">Surf Ramp Bug Fix</a><br>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

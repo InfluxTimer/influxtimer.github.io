@@ -1,0 +1,67 @@
+---
+title: "Influx Timer"
+---
+<!DOCTYPE html>
+<html>
+	<head>
+		{% include "head.njk" %}
+	</head>
+	<body>
+		{% include "top.njk" %}
+		<div class="container">
+			<div class="inf-cont">
+				<p class="mx-auto text-center display-4">SourceMod timer for CS:S and CS:GO</p>
+				<p class="font-weight-light text-center text-muted">Influx - because there weren't enough timers already</p>
+			</div>
+			<div class="inf-cont inf-features">
+				<div class="col">
+					<div class="row my-5 justify-content-center">
+						<div class="col-md-auto mb-4">
+							<a href="javascript:;" class="inf-modal"><img src="img/pic001.jpg" class="rounded-circle border inf-enlarge mx-auto d-block"></a>
+						</div>
+						<div class="col-5 d-flex flex-column justify-content-center">
+							<div>
+								<div class="text-uppercase h3 font-weight-light">Easy to setup</div>
+								<p>No messing around with databases. No dependencies. This makes it perfect for practicing.</p>
+							</div>
+						</div>
+					</div>
+					<div class="row my-5 justify-content-center flex-row-reverse">
+						<div class="col-md-auto mb-4">
+							<a href="javascript:;" class="inf-modal"><img src="img/pic002.jpg" class="rounded-circle border inf-enlarge mx-auto d-block"></a>
+						</div>
+						<div class="col-5 d-flex flex-column justify-content-center">
+							<div>
+								<div class="text-uppercase h3 font-weight-light">Highly configurable</div>
+								<p>Form a unique experience for <i>your</i> server.</p>
+							</div>
+						</div>
+					</div>
+					<div class="row my-5 justify-content-center">
+						<div class="col-md-auto mb-4">
+							<a href="javascript:;" class="inf-modal"><img src="img/pic003.jpg" class="rounded-circle border inf-enlarge mx-auto d-block"></a>
+						</div>
+						<div class="col-5 d-flex flex-column justify-content-center">
+							<div>
+								<div class="text-uppercase h3 font-weight-light">Multi Gamemode</div>
+								<p>Supports bhop and surf out of the box.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="inf-img-modal" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-body rounded" style="padding-top:5px">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<img src="" id="inf-img-modal-img" style="width: 100%;" >
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

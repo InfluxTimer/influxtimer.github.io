@@ -1,0 +1,14 @@
+[
+    {
+        "build_num": "2",
+        "commit_message": "Github Actions",
+        "commit_hash": "d3e055ecf4d25cbb08ffd531215a7be49e641a6a",
+        "downloads": {
+            "bhop": "https://influxtimer.com/dl/influx_2_bhop.zip",
+            "bhoplite": "https://influxtimer.com/dl/influx_2_bhoplite.zip",
+            "surf": "https://influxtimer.com/dl/influx_2_surf.zip",
+            "deathrun": "https://influxtimer.com/dl/influx_2_deathrun.zip",
+            "full": "https://influxtimer.com/dl/influx_2_full.zip"
+        }
+    }
+]
